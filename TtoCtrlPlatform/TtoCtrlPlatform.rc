@@ -1,0 +1,431 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TtoCtrlPlatform.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TtoCtrlPlatform.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TTOCTRLPLATFORM_DIALOG DIALOGEX 0, 0, 600, 440
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PACKET_TOTAL,538,327,55,16,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PACKET_PRINTED,539,379,54,15,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    CONTROL         "",IDC_LIST_DEVICE,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,226,469,186
+    PUSHBUTTON      "",IDC_BUTTON_CANCEL,586,0,13,13,BS_BITMAP | NOT WS_TABSTOP
+    CONTROL         "",IDC_LIST_TASK,"SysListView32",LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,71,469,144
+    PUSHBUTTON      "更新设备列表",IDC_BUTTON_UPDATE_DEVICE,488,164,103,18,BS_BITMAP
+    PUSHBUTTON      "更新任务列表",IDC_BUTTON_UPDATE_TASK,488,102,103,18,BS_BITMAP | BS_MULTILINE
+    PUSHBUTTON      "查询历史任务",IDC_BUTTON_TASK_HISTORY,489,71,102,17,BS_BITMAP
+    PUSHBUTTON      "",IDC_BUTTON_MIN,570,0,13,13,BS_BITMAP | NOT WS_TABSTOP
+    PUSHBUTTON      "修改登陆密码",IDC_BUTTON_CHANGE_PASS,488,196,103,19,BS_BITMAP | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_2D_CODE,536,257,57,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_CODE2,486,273,107,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "增加普通任务",IDC_BUTTON_ADD_COMM_TASK,488,133,103,18,BS_BITMAP | BS_MULTILINE
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 256, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登陆",ID_LOGIN,160,151,68,16,BS_BITMAP | BS_NOTIFY
+    PUSHBUTTON      "退出",IDCANCEL,34,151,71,16,BS_BITMAP | BS_NOTIFY
+    EDITTEXT        IDC_EDIT_LOGIN_NAME,90,87,137,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGIN_PASS,90,114,137,16,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 304, 106
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,26,10,10
+    CONTROL         "",IDC_CHECK_WEIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,26,10,10
+    CONTROL         "",IDC_CHECK_SPEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,26,9,10
+    CONTROL         "",IDC_CHECK_PLACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,26,10,10
+    CONTROL         "",IDC_CHECK_BATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,26,10,10
+    CONTROL         "",IDC_CHECK_DATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,44,9,10
+    CONTROL         "",IDC_CHECK_QR_CODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,44,9,10
+    CONTROL         "",IDC_CHECK_1_CODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,45,9,10
+    CONTROL         "",IDC_CHECK_DATE_TO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,45,9,10
+    CONTROL         "",IDC_CHECK_OFFDOC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,46,9,10
+    CONTROL         "",IDC_CHECK_STANDARD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,65,9,10
+    CONTROL         "",IDC_CHECK_CMY_SIM_NAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,65,10,10
+    CONTROL         "",IDC_CHECK_DEFINE1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,65,9,10
+    CONTROL         "",IDC_CHECK_DEFINE2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,65,9,10
+    CONTROL         "",IDC_CHECK_DEFINE3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,65,9,10
+    DEFPUSHBUTTON   "配置完成",IDOK,112,88,50,14,BS_BITMAP
+    PUSHBUTTON      "x",IDC_BUTTON_PZ_QUIT,288,0,16,14,BS_BITMAP
+END
+
+IDD_DIALOG_MODIFY_PASS DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",ID_BUTTON_MODIFY_OK,67,142,68,14,BS_BITMAP
+    PUSHBUTTON      "取消",IDCANCEL,183,142,70,14,BS_BITMAP
+    EDITTEXT        IDC_EDIT_OLD_PASS,136,50,116,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_PASS,136,75,116,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_PASS_AGAIN,136,99,116,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TASK_HISTORY DIALOGEX 0, 0, 578, 252
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_TASK_HISTORY,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,18,576,196
+    PUSHBUTTON      "|<首页",IDC_BUTTON_SHOUYE,134,226,41,14,BS_BITMAP
+    PUSHBUTTON      "末页>|",IDC_BUTTON_MOYE,534,227,43,14,BS_BITMAP
+    PUSHBUTTON      "<<上一页",IDC_BUTTON_SHANGYE,270,227,42,14,BS_BITMAP
+    PUSHBUTTON      "下一页>>",IDC_BUTTON_XIAYE,405,227,42,14,BS_BITMAP
+    COMBOBOX        IDC_COMBO_CUR_PER_TOTAL,1,226,88,51,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_HISTORY_QUIT,562,1,14,13,BS_BITMAP
+END
+
+IDD_DIALOG_TASK_AND_DEVICE_SETUP DIALOGEX 0, 0, 293, 119
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_SETUP_DEVICE,82,55,108,127,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_MATCH,218,54,58,14,BS_BITMAP
+    PUSHBUTTON      "X",IDC_BUTTON_FEIPEI_QUIT,275,0,18,14,BS_BITMAP
+END
+
+IDD_DIALOG_MODIFY_PLACE_SIMPLE DIALOGEX 0, 0, 316, 275
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SPEC,69,28,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SIMPLE_PLACE,69,48,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_CODE1,69,67,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_DATE_TO,69,87,205,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER_SY_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,277,87,12,14
+    EDITTEXT        IDC_EDIT_SY_PIWEN_NUM,69,107,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_STANDARD,69,126,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_DEF1,69,145,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_DEF2,69,164,219,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SY_DEF3,69,184,219,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_RADIO_TIME1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,69,209,10,10
+    CONTROL         "",IDC_RADIO_TIME2,"Button",BS_AUTORADIOBUTTON,149,209,10,10
+    CONTROL         "",IDC_RADIO_TIME3,"Button",BS_AUTORADIOBUTTON,229,209,10,10
+    CONTROL         "",IDC_RADIO_WEIGHT_G,"Button",BS_AUTORADIOBUTTON | WS_GROUP,69,223,10,10
+    CONTROL         "",IDC_RADIO_WEIGHT_KG,"Button",BS_AUTORADIOBUTTON,149,223,10,10
+    CONTROL         "",IDC_RADIO_WEIGHT_NO,"Button",BS_AUTORADIOBUTTON,229,223,10,10
+    DEFPUSHBUTTON   "确认修改",IDOK,129,250,56,16,BS_BITMAP
+    PUSHBUTTON      "",IDC_BUTTON_SP_QUIT,302,1,14,12,BS_BITMAP
+    GROUPBOX        "",IDC_STATIC1,11,180,8,11,NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC2,35,180,8,9,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_FEI_SUYUAN DIALOGEX 0, 0, 317, 334
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_F_NAME,77,31,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_NUM,77,48,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_WEIGHT,77,64,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_SPEC,77,80,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_PLACE,77,96,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_BATCH,77,113,221,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER_FSY,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,289,130,9,14
+    EDITTEXT        IDC_EDIT_F_DATE,77,130,209,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_1CODE,77,147,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_DATE_TO,77,163,209,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_OFFDOC,77,180,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_STANDARD,77,197,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_DEFINE1_VALUE,77,213,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_DEFINE2_VALUE,77,229,221,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_F_DEFINE3_VALUE,77,246,221,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "",IDOK,131,294,57,17,BS_BITMAP
+    PUSHBUTTON      "",IDCANCEL,300,1,16,14,BS_BITMAP
+    CONTROL         "",IDC_DATETIMEPICKER_FSY_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP | 0x8,301,129,12,15
+    CONTROL         "",IDC_DATETIMEPICKER_FSY_DATE_TO,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,289,163,9,14
+    CONTROL         "",IDC_RADIO_FSY_TIME1,"Button",BS_AUTORADIOBUTTON,77,270,10,10
+    CONTROL         "",IDC_RADIO_FSY_TIME2,"Button",BS_AUTORADIOBUTTON,157,270,9,10
+    CONTROL         "",IDC_RADIO_FSY_TIME3,"Button",BS_AUTORADIOBUTTON,236,270,10,10
+END
+
+IDD_DIALOG_MID_PACKET DIALOGEX 0, 0, 212, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "在线打印中码",IDC_BUTTON_PRINT,135,189,72,16,BS_BITMAP
+    EDITTEXT        IDC_EDIT_MID_CODE,5,22,201,164,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "当前打印状态：",IDC_STATIC_STATUS,6,190,123,13
+    PUSHBUTTON      "X",IDC_BUTTON_MID_CANCEL,197,2,14,12,BS_BITMAP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TtoCtrlPlatform.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "TtoCtrlPlatform.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TTOCTRLPLATFORM_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 437
+    END
+
+    IDD_DIALOG_MODIFY_PASS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_TASK_HISTORY, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_DIALOG_TASK_AND_DEVICE_SETUP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DIALOG_MODIFY_PLACE_SIMPLE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 314
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_DIALOG_FEI_SUYUAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 316
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_DIALOG_MID_PACKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        TOPMARGIN, 1
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGIN        BITMAP                  "res\\login.bmp"
+IDB_BITMAP_MAIN         BITMAP                  "res\\main.bmp"
+IDB_BITMAP_LG_LOGIN     BITMAP                  "res\\lg_login.bmp"
+IDB_BITMAP_LG_QUIT      BITMAP                  "res\\lg_quit.bmp"
+IDB_BITMAP_XG_PASS      BITMAP                  "res\\xg.bmp"
+IDB_BITMAP_CX_HISTORY   BITMAP                  "res\\cx.bmp"
+IDB_BITMAP_TASK         BITMAP                  "res\\gx.bmp"
+IDB_BITMAP_MAIN_QUIT    BITMAP                  "res\\quit.bmp"
+IDB_BITMAP_DEVICE       BITMAP                  "res\\sb.bmp"
+IDB_BITMAP_MAIN_SMALL   BITMAP                  "res\\small.bmp"
+IDB_BITMAP_DEVICE_YINCANG BITMAP                  "res\\h-sb.bmp"
+IDB_BITMAP_BJ_HIS       BITMAP                  "res\\ls_bj.bmp"
+IDB_BITMAP_LAST_PAGE    BITMAP                  "res\\my.bmp"
+IDB_BITMAP_BTN_MOD_COMFIRM BITMAP                  "res\\qrxg.bmp"
+IDB_BITMAP_FIRST_PAGE   BITMAP                  "res\\sy.bmp"
+IDB_BITMAP_PREV_PAGE    BITMAP                  "res\\syy.bmp"
+IDB_BITMAP_BJ_PASS      BITMAP                  "res\\xg_bj.bmp"
+IDB_BITMAP_NEXT_PAGE    BITMAP                  "res\\xyy.bmp"
+IDB_BITMAP_BJ_SIMPLE_PLACE BITMAP                  "res\\cd_bj.bmp"
+IDB_BITMAP_MOD_PASS_TC  BITMAP                  "res\\tc.bmp"
+IDB_BITMAP_MOD_PASS_QD  BITMAP                  "res\\qd.bmp"
+IDB_BITMAP_FP_OK        BITMAP                  "res\\fp.bmp"
+IDB_BITMAP_PZ_OK        BITMAP                  "res\\pz.bmp"
+IDB_BITMAP_PZ_BJ        BITMAP                  "res\\pz_bj.bmp"
+IDB_BITMAP_FP_BJ        BITMAP                  "res\\sb_bj.bmp"
+IDB_BITMAP_1CODE_BJ     BITMAP                  "res\\txm.bmp"
+IDB_BITMAP_1CODE_OK     BITMAP                  "res\\txm_btn.bmp"
+IDB_BITMAP_M_QUEDING    BITMAP                  "res\\m-qd.bmp"
+IDB_BITMAP_M_QUEXIAO    BITMAP                  "res\\m-qx.bmp"
+IDB_BITMAP_FSY_BJ       BITMAP                  "res\\dm_bj.bmp"
+IDB_BITMAP_FSY_TIANJIA  BITMAP                  "res\\tj_btn.bmp"
+IDB_BITMAP_FSY_CANCEL   BITMAP                  "res\\qx_btn.bmp"
+IDB_BITMAP_ADD_PT_TASK  BITMAP                  "res\\xz_btn.bmp"
+IDB_BITMAP_ZB_INFO      BITMAP                  "res\\zb.bmp"
+IDB_BITMAP_ZB_PRINT     BITMAP                  "res\\zb_btn.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TASK MENU 
+BEGIN
+    POPUP "任务"
+    BEGIN
+        MENUITEM "修改任务",                        ID_EDIT_TASK
+        MENUITEM "分配任务",                        ID_TASK_FEN_PEI
+        MENUITEM "下载任务",                        ID_TASK_DOWNLOAD
+        MENUITEM "取消设备",                        ID_TASK_QU_XIAO
+        MENUITEM "关闭任务",                        ID_TASK_GUAN_BI
+        MENUITEM "中包详情",                        ID_MID_PACK
+    END
+END
+
+IDR_MENU_DEVICE MENU 
+BEGIN
+    POPUP "设备"
+    BEGIN
+        MENUITEM "开始打印",                        ID_DEVICE_PRINT_START
+        MENUITEM "停止打印",                        ID_DEVICE_PRINT_STOP
+        MENUITEM "模板设置",                        ID_MODEL_SET
+        MENUITEM "取消任务",                        ID_QUXIAO_TASK
+    END
+END
+
+IDR_TUOPAN_MENU MENU 
+BEGIN
+    POPUP "托盘"
+    BEGIN
+        MENUITEM "返回主界面",                       ID_BUTTON_MODIFY_OK
+        MENUITEM "退出系统",                        ID_OUT_SYSTEM
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_MIDPACKETINFO  HTML                    "MidPacketInfo.htm"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TtoCtrlPlatform.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
